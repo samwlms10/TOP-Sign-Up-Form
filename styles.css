@@ -1,0 +1,68 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    
+}
+body {
+    min-height: 100vh;
+    background-image: url("images/SignUpFormBackground.jpg");
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+.sign-up-container {
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    height: 100vh;
+    width: max(60%, 600px);
+    border-radius: 20px 0 0 20px;
+}
+.sign-up-greeting {
+    display: flex;
+    padding: 0 45px 35px 0;
+    font-weight: 500;
+    font-size: 16px;
+    width: min-content(500px, 100%);
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: min-content(500px, 100%);
+    font-size: 11px;
+}
+
+.form-row-one, .form-row-two, .form-row-three {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+}
+.input-groups {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 0;
+}
+form input {
+    flex-shrink: 0;
+    height: 20px;
+    width: 200px;
+}
+
+.submit-button {
+    background-color: darkolivegreen;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 40px 0px 25px 0px;
+    border: none;
+}
