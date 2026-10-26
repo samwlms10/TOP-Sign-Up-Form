@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Sign-Up-Form</title>
 </head>
 <body>
     <div class="container">
@@ -14,20 +14,22 @@
     </div>
     <div class="sign-up-container">
     <div class="sign-up-greeting">
-    <p>This is not a real online service! you know you need somethin glike this in your life to help you realize your depest dreams Sign up <i>now</i> to get started.</p>
+    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+    <br>
+    <p>You <i>know</i> you want to.</p>
     </div>
-    <H2>Sign Up</H2>
-    <Form>
+    <h2>Sign Up</h2>
+    <form>
         <div class="form-container">
         <div class="form-row-one">
             <div class="input-groups">
-                <label for="firstname-input">FIRST NAME</label>
-                <input type="text" name="firstname" id="firstname-input" placeholder="Thor" required>
+                <label for="first-name-input">FIRST NAME</label>
+                <input type="text" name="firstname" id="first-name-input" placeholder="Thor" required>
             </div>
 
             <div class="input-groups">
-                <label for="lastname-input">LAST NAME</label>
-                <input type="text" name="lastname" id="lastname-input" placeholder="Odinson" required>
+                <label for="last-name-input">LAST NAME</label>
+                <input type="text" name="lastname" id="last-name-input" placeholder="Odinson" required>
             </div>
         </div>
 
@@ -47,21 +49,23 @@
         <div class="form-row-three">
             <div class="input-groups">
                 <label for="password-input">PASSWORD</label>
-                <input type="password" name="password" id="password-input" placeholder="Password" required>
+                <input type="password" name="password" id="password-input" placeholder="Password" required minlength="8">
             </div>
 
             <div class="input-groups">
                 <label for="confirm-password-input">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password" id="confirm-password-input" placeholder="Confirm Password" required>
+                <input type="password" name="confirm-password" id="confirm-password-input" placeholder="Confirm Password" required minlength="8">
             </div>
         </div>
         </div>
+        <hr class="divider">
         
         <button class="submit-button" type="submit">Create Account</button>
-    </Form>
+    </form>
     <p>Already have an account? <a href="login.html">Log in</a></p>
     </div>
     </div>
+    <footer class="credit">Photo from Pexels.com from Daniel Flores.</footer>
 </body>
-<script src="SignUpForm.js"></script>
+
 </html>

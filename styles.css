@@ -7,11 +7,11 @@
     src: url(Norse.otf);
 }
 body {
+    font-family: "Menlo","Monaco",'Courier New', Courier, monospace;
     min-height: 100vh;
     background-image: url("images/SignUpFormBackground.jpg");
     background-size: cover;
     background-position: left;
-    overflow: hidden;
 }
 .container {
     display: flex;
@@ -22,11 +22,18 @@ body {
     flex: 1;
     height: 100px;
     justify-content: center;
-    font-family: "Norse";
+    font-family: "Norse", "Menlo", "Monaco", 'Courier New';
     margin-top: 25%;
     font-size: 100px;
     color: white;
     background-color: rgba(108, 108, 108, 0.5);
+}
+.credit {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 8px;
+    color: white;
 }
 .sign-up-container {
     background-color: white;
@@ -41,15 +48,20 @@ body {
 }
 .sign-up-greeting {
     display: flex;
+    flex-direction: column;
     padding: 0 45px 35px 0;
     font-size: 21px;
     font-weight: 600;
-    width: min-content(500px, 100%);
+    width: 600px;
+    
+}
+form {
+    align-self: stretch;
 }
 .form-container {
     display: flex;
     flex-direction: column;
-    width: min-content(500px, 100%);
+    width: min(500px, 100%);
     font-size: 11px;
 }
 
@@ -65,13 +77,23 @@ body {
     padding: 0 40px 0 0;
 }
 form input {
+    border: 2px solid #E5E7Eb;
+    border-radius: 5px;
     flex-shrink: 0;
     height: 20px;
     width: 200px;
     padding-left: 5px;
 }
-form input:hover{
+form input:hover {
     border: 2px solid rgb(44, 68, 4);
+}
+form input:focus {
+    outline: none;
+    border: 2px solid rgb(0, 0, 117);
+    box-shadow: 0 0 6px rgba(0, 0, 117, .3);
+}
+form input:user-invalid {
+    border: 2px solid red;
 }
 
 .submit-button {
@@ -87,4 +109,10 @@ form input:hover{
 
 a {
     color: rgb(44, 68, 4);
+}
+.divider {
+    border: none;
+    border-top: 2px solid lightgrey;
+    margin: 30px 0 0 -29px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
 }
