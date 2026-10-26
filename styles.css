@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;  
+    box-sizing: border-box;
 }
 @font-face {
     font-family: "Norse";
@@ -38,12 +39,12 @@ body {
 .sign-up-container {
     background-color: white;
     display: flex;
+    flex: 0 1 60%;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     padding-left: 30px;
-    height: 100vh;
-    width: max(60%, 600px);
+    min-height: 100vh;
     border-radius: 20px 0 0 20px;
 }
 .sign-up-greeting {
@@ -52,7 +53,7 @@ body {
     padding: 0 45px 35px 0;
     font-size: 21px;
     font-weight: 600;
-    width: 600px;
+    max-width: 600px;
     
 }
 form {
@@ -67,8 +68,9 @@ form {
 
 .form-row-one, .form-row-two, .form-row-three {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    height: 60px;
+    margin-bottom: 20px;
     align-items: center;
 }
 .input-groups {
@@ -81,7 +83,7 @@ form input {
     border-radius: 5px;
     flex-shrink: 0;
     height: 20px;
-    width: 200px;
+    width: 100%;
     padding-left: 5px;
 }
 form input:hover {
